@@ -1,0 +1,11 @@
+reverse the string without reversing its individual words. Words are separated by dots:
+S = pqr.mno
+Output: mno.pqr
+
+class Solution:
+    #Function to reverse words in a given string.
+    def reverseWords(self,S):
+        # code here 
+        words = S.split(".")
+        revwords = words[::-1]
+        return ".".join(revwords)
